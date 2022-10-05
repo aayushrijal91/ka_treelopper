@@ -1,0 +1,54 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    .header-top-bar {
+        background: $primary;
+        color: $white;
+        line-height: 1;
+        padding: 12px 0 9px;
+        letter-spacing: 0.06em;
+        font-size: 1.375rem; //22px
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
+    }
+
+    .navigation-bar {
+        background: $dark;
+
+        .btn {
+            height: 45px;
+        }
+    }
+}
+
+section.banner {
+    background: imgUrl('banner.png') right center #1b1b1b;
+    background-size: contain;
+    padding: 61px 0 246px;
+    position: relative;
+
+    .tree-lopper-guy {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .white-trees {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}
