@@ -10,9 +10,11 @@ body {
 }
 
 .btn {
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 
     &:focus {
         box-shadow: none;
@@ -48,6 +50,14 @@ body {
     letter-spacing: 0.12em;
 }
 
+.letter-spacing-n01 {
+    letter-spacing: -0.01em;
+}
+
+.letter-spacing-n02 {
+    letter-spacing: -0.02em;
+}
+
 .letter-spacing-34 {
     letter-spacing: 0.34em;
 }
@@ -56,7 +66,7 @@ body {
 #return-to-top {
     position: fixed;
     bottom: 95px;
-    right: 13px;
+    right: 55px;
     z-index: 9;
     background: $primary;
     width: 50px;

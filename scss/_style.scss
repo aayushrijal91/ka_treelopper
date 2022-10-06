@@ -19,22 +19,50 @@ header {
     .navigation-bar {
         background: $dark;
 
-        .btn {
-            height: 45px;
+        @include media-breakpoint-down(sm) {
+            .logo-bar {
+                padding: 6px 24px;
+                background-color: $white;
+
+                .abbreviation {
+                    color: $primary;
+                    font-size: 5.125rem !important;
+                    line-height: 1;
+                }
+
+                .lengthy {
+                    color: $dark;
+                    font-size: 1.5rem !important;
+                    line-height: 0.8;
+                }
+            }
+
+            .btn {
+                height: 36px;
+            }
         }
     }
 }
 
 section.banner {
-    background: imgUrl('banner.png') right center #1b1b1b;
+    background: linear-gradient(90deg, #1b1b1b 0 50%, rgba(0, 0, 0, 0) 70% 100%), imgUrl('banner.png') right center;
     background-size: contain;
     padding: 61px 0 246px;
     position: relative;
+
+    @include media-breakpoint-down(sm) {
+        padding: 36px 0 176px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0 20%, #1b1b1b 70% 100%), imgUrl('banner.png') 50% top;
+    }
 
     .tree-lopper-guy {
         position: absolute;
         bottom: 0;
         left: 0;
+
+        @include media-breakpoint-down(sm) {
+            width: 139px;
+        }
     }
 
     .white-trees {
@@ -42,13 +70,151 @@ section.banner {
         bottom: 0;
         width: 100%;
     }
+
+    @include media-breakpoint-down(sm) {
+        .heading {
+            font-size: 5.5rem !important;
+            line-height: 1.3;
+        }
+
+        .cta-small-title {
+            font-size: 1.18rem !important;
+        }
+
+        .cta-number {
+            font-size: 3.5rem !important;
+        }
+    }
+}
+
+section.about {
+    background: imgUrl('about.png') left center;
+    background-size: contain;
+    padding: 150px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 12px 0;
+        background: none;
+    }
+
+    .sm-heading {
+        letter-spacing: 0.21em;
+    }
+
+    .hero-heading {
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+
+        @include media-breakpoint-up(md) {
+            word-spacing: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 4.4rem !important;
+            line-height: 0.9;
+        }
+    }
+}
+
+section.services {
+    background: #202020 imgUrl('services-sm.png') center bottom;
+    background-size: contain;
+
+    @include media-breakpoint-up(md) {
+        background: #202020 imgUrl('services.png') center bottom;
+        padding: 56px 0;
+    }
+
+    .white-trees {
+        transform: rotate(180deg)
+    }
+
+    .service-card {
+        border-radius: 4px;
+        overflow: hidden;
+        background: $primary imgUrl('green-tree.png') center bottom;
+        background-size: contain;
+        height: 100%;
+
+        .caption {
+            padding: 32px 37px 54px;
+            color: $white;
+
+            @include media-breakpoint-down(sm) {
+                padding: 27px 31px 54px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            .heading {
+                font-size: 2.5625rem !important;
+            }
+        }
+    }
+
+    .form {
+        padding: 39px 0 305px;
+
+        @include media-breakpoint-up(md) {
+            padding: 81px 0 155px;
+        }
+
+        .hero-heading {
+            line-height: 1;
+            letter-spacing: 0.01em;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 4.6rem !important;
+            }
+        }
+
+        .sub-heading {
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem !important;
+            }
+        }
+
+        form {
+            .form-row {
+                --bs-gutter-y: 36px;
+
+                @include media-breakpoint-down(sm) {
+                    --bs-gutter-y: 23px;
+                }
+            }
+
+            label {
+                color: $white;
+                margin-bottom: 14px;
+                line-height: 1;
+            }
+
+            input,
+            textarea {
+                background: $white;
+                border: 1px solid #E0E0E0;
+                border-radius: 0;
+                padding: 22px 19px;
+            }
+
+            input,
+            button {
+                height: 64px;
+            }
+
+            button {
+                font-family: $font-articulat;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 footer {
+    font-family: $font-articulat;
+    padding: 31px 0;
     font-size: 0.875rem;
-    background-color: #221f1f;
-
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
-    }
+    background-color: #131211;
+    color: #7B7777;
 }

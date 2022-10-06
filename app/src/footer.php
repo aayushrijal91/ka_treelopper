@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row justify-content-center justify-content-lg-between align-items-center">
 			<div class="col-auto">
-				<div class="row gx-2 gx-md-3 text-white justify-content-center">
+				<div class="row gx-2 gx-md-5 text-white justify-content-center">
 					<div class="col-12 text-center pb-3 d-lg-none">
 						<a href="https://www.aiims.com.au/like-our-work/" target="_blank">
 							<?= renderImg("aiims.png", "logo") ?>

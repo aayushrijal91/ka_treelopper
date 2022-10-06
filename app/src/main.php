@@ -6,7 +6,7 @@ include __DIR__ . '/header.php';
 <header>
     <div class="header-top-bar">
         <div class="container">
-            <div class="row justify-content-center gx-xl-2">
+            <div class="row justify-content-center align-items-center gx-2 gy-3">
                 <div class="col-auto">Rapid Response Time</div>
                 <div class="col-auto">
                     <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,15 +22,24 @@ include __DIR__ . '/header.php';
     <div class="navigation-bar">
         <div class="container">
             <div class="row justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-auto">
-                    <a href="./" class="d-flex align-items-center text-white text-decoration-none">
-                        <div class="fs-3">K&amp;A</div>
-                        <div class="ps-1 fs-11">Tree lopping Services</div>
-                    </a>
+                <div class="col-md-auto logo-bar">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-7 col-md-auto">
+                            <a href="./" class="d-flex align-items-center text-white text-decoration-none">
+                                <div class="fs-3 abbreviation">K&amp;A</div>
+                                <div class="ps-1 fs-11 lengthy">Tree lopping Services</div>
+                            </a>
+                        </div>
+                        <div class="col-auto d-md-none">
+                            <a href="#form" class="btn btn-primary rounded-3 text-white px-4 fs-14">
+                                Book Online
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-auto">
                     <div class="row align-items-center">
-                        <div class="col-12 col-md-auto ml-lg-3 mr-2 mr-lg-0">
+                        <div class="col-12 col-md-auto py-3 py-md-0">
                             <a href="tel:<?= $phone_number ?>" class="btn fs-7 rounded-0 text-white">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M20.7156 17.7579L16.4411 15.859C15.9969 15.6604 15.4995 15.6144 15.0265 15.7283C14.5535 15.8421 14.1315 16.1094 13.8263 16.4883L12.5945 18.0285C10.5749 16.7326 8.85572 15.0198 7.55221 13.0051L9.09242 11.7733C9.47103 11.4682 9.73806 11.0465 9.8519 10.5738C9.96573 10.1011 9.91996 9.60406 9.72172 9.16011L7.83382 4.87458C7.62203 4.39738 7.24761 4.01093 6.77735 3.78415C6.30708 3.55738 5.77155 3.50502 5.26627 3.63643L1.6478 4.58038C1.12342 4.71685 0.667753 5.04183 0.36793 5.49316C0.0681063 5.94449 -0.054831 6.4905 0.0226276 7.02678C0.696923 11.7068 2.86873 16.0425 6.21299 19.385C9.55725 22.7276 13.8941 24.8972 18.5744 25.5691C19.1108 25.6451 19.6564 25.5207 20.1068 25.2197C20.5573 24.9187 20.881 24.4623 21.0161 23.9377L21.96 20.3192C22.0913 19.814 22.0381 19.2786 21.81 18.8091C21.5819 18.3396 21.1939 17.9669 20.7156 17.7579Z" fill="white" />
@@ -40,8 +49,8 @@ include __DIR__ . '/header.php';
                                 <span class="ps-3">call us today <?= $phone_number ?></span>
                             </a>
                         </div>
-                        <div class="col-12 col-md-auto ml-lg-2">
-                            <a href="#form" class="btn btn-white rounded-3 text-primary fs-14 px-md-5">
+                        <div class="col-md-auto d-none d-md-block">
+                            <a href="#form" class="btn btn-white rounded-3 text-primary px-md-5">
                                 Book Online
                             </a>
                         </div>
@@ -56,29 +65,30 @@ include __DIR__ . '/header.php';
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="fs-1 bg-primary d-inline-flex line-height-1 pe-3">The problem solver</div>
-                <div class="fs-1 text-white line-height-1 pe-3">Tree lopper</div>
+                <div class="heading d-md-none"><span class="bg-primary">The problem solver</span> <span class="text-white">Tree Lopper</span></div>
+                <div class="fs-1 bg-primary d-none d-md-inline-flex line-height-1 pe-3">The problem solver</div>
+                <div class="fs-1 text-white d-none d-md-inline-flex line-height-1 pe-3">Tree lopper</div>
                 <div class="text-white letter-spacing-12 fs-10">We offer a wide selection of expert tree work and arborist services</div>
                 <div class="font-articulat fs-14 text-white pe-xxl-5 pt-2 pb-5">Welcome to K&A Tree Lopping Services. Are you looking for a reliable and high-quality tree surgeon in the Sydney area? Then look no further. We offer a wide selection of expert tree work and arborist services to private residents, local authorities and larger companies. We have been exceeding our customer’s expectations since 2015.</div>
-                <div class="row text-white gx-2">
-                    <div class="col h-inherit">
+                <div class="row text-white g-2">
+                    <div class="col-md h-inherit">
                         <div class="bg-primary text-end line-height-1 p-3 h-100 d-flex flex-column justify-content-center position-relative">
-                            <?= renderImg('tree-lopper-guy.png','lib', 'tree-lopper-guy') ?>
+                            <?= renderImg('tree-lopper-guy.png', 'lib', 'tree-lopper-guy') ?>
                             <div class="fs-5">Refer a Neighbour</div>
-                            <div class="fs-7 letter-spacing-34">Receive 10% off</div>
+                            <div class="cta-small-title fs-7 letter-spacing-34">Receive 10% off</div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit">
-                        <div class="bg-primary text-center line-height-1 p-3 h-100">
+                    <div class="col col-md-auto h-inherit">
+                        <div class="bg-primary text-center line-height-1 px-3 py-1 p-md-3 h-100 d-flex d-md-block justify-content-between align-items-center">
                             <div class="fs-8">Refer</div>
-                            <div class="fs-4">2</div>
+                            <div class="fs-4 cta-number">2</div>
                             <div class="fs-8">15% off</div>
                         </div>
                     </div>
-                    <div class="col-auto h-inherit">
-                        <div class="bg-primary text-center line-height-1 p-3 h-100">
+                    <div class="col col-md-auto h-inherit">
+                        <div class="bg-primary text-center line-height-1 px-3 py-1 h-100 d-flex d-md-block justify-content-between align-items-center">
                             <div class="fs-8">Refer</div>
-                            <div class="fs-4">3</div>
+                            <div class="fs-4 cta-number">3</div>
                             <div class="fs-8">20% off</div>
                         </div>
                     </div>
@@ -86,7 +96,176 @@ include __DIR__ . '/header.php';
             </div>
         </div>
     </div>
-    <?= renderImg('white-trees.png', 'background', 'white-trees') ?>
+    <?= renderImg('white-trees.png', 'background', 'white-trees d-none d-md-block') ?>
+    <?= renderImg('white-trees-sm.png', 'background', 'white-trees d-md-none') ?>
 </section>
 
+<section class="about">
+    <div class="container">
+        <div class="row justify-content-lg-end">
+            <div class="col-lg-5">
+                <div class="sm-heading fs-10 bg-primary text-center text-white">Fully insured</div>
+                <div class="hero-heading text-secondary fs-2 pt-3">Wide Selection of<span class="text-primary d-md-none"> Expert Tree Work</span></div>
+                <div class="hero-heading text-primary fs-2 d-none d-md-block">expert tree work</div>
+                <div class="fs-9 font-helvetica-cd text-uppercase fw-400 letter-spacing-n02 line-height-1 py-2 py-md-0">Experienced, Fully Qualified and <span class="text-primary">Friendly Team</span></div>
+                <p class="description font-articulat fw-500 text-light-grey pt-3">Taking on projects of all sizes throughout the years, we work with a variety of different clients across the local area. Always going the extra mile, each of our services are affordable and delivered with a smile. Well-Established Tree Care Company Covering Sydney wide.</p>
+                <p class="description font-articulat fw-500 text-light-grey">With an experienced, fully qualified and friendly team, we take the time to understand your individual needs for your home or business before recommending a plan of action. For each service we provide, we create a plan which will take into consideration your location, as well as the age, the condition and the growth rate of the tree – which demonstrates perfectly how we’re more than capable of taking on any job that comes our way.</p>
+                <div class="row gx-3 pt-2">
+                    <div class="col-6 col-md-5">
+                        <a href="#form" class="btn btn-grey rounded-3 fw-400 text-white px-md-5 font-helvetica-cd text-uppercase">
+                            Call Today
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-5">
+                        <a href="#form" class="btn btn-white border-primary rounded-3 fw-400 text-primary px-md-5 font-helvetica-cd text-uppercase">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?= renderImg('about-sm.png', 'background', 'w-100 d-md-none') ?>
+</section>
+
+<section class="services">
+    <?= renderImg('white-trees-sm.png', 'background', 'white-trees d-md-none') ?>
+    <div class="container">
+        <div class="row justify-content-between align-items-center pt-3 pb-4 py-md-5">
+            <div class="col-auto">
+                <div class="text-white fs-1 line-height-1 letter-spacing-n02">All services</div>
+            </div>
+            <div class="col-md-auto">
+                <div class="row g-0 pt-4 pt-md-0">
+                    <div class="col col-md-auto">
+                        <a href="#form" class="btn btn-primary rounded-0 fw-400 text-white px-md-4 fs-7">
+                            Same day service
+                        </a>
+                    </div>
+                    <div class="col col-md-auto">
+                        <a href="#form" class="btn border-primary rounded-0 fw-400 text-white px-md-4 fs-7">
+                            Book a service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gx-4 gy-5">
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-1.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Tree Removal</div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            Overgrown trees are a common issue. Whether they need to be removed for extra space, they are unsightly and casting dark shadows on your garden or they’re affecting the house itself, there are a number of reasons why you may need to remove one.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-2.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Tree Lopping</div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            You can count on K&A Tree Lopping Services to take care of your overgrown shrubs, dangling trees, and diseased trees – no matter how big or small the job is. We provide professional tree cutting and pruning services
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-3.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Tree pruning</div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            Control the size and health of your trees with the professional tree cutting, pruning and lopping services offered by K&A Tree Lopping Services. The visual appeal of the trees on your property is naturally important, but so are their health and longevity. We can take care of both!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-4.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Stump Grinding</div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            Tree stump removal is a process where the stump is removed either using hand tools or mechanical machinery such as a stump grinder to grind out the tree stump.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-5.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Land clearing </div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            Land clearing involves the removal of trees, tree stumps, underbrush and other waste debris from a patch of land, normally in preparation for development.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 h-inherit">
+                <div class="service-card">
+                    <?= renderImg('service-6.jpg', 'lib', 'w-100') ?>
+                    <div class="caption">
+                        <div class="heading letter-spacing-n02 fs-6 line-height-1">Stump Removal</div>
+                        <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                            K&A Tree Lopping Services are a Stump Removal Specialist company that has served Sydney for over 15 years, removing tree stumps for homeowners as well as projects for the 2012 London Olympics and Royal Arsenal Development.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form" id="form">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4">
+                    <div class="sm-heading fs-10 bg-primary text-center text-white">15% seniors discount</div>
+                    <div class="hero-heading text-primary fs-2 pt-3">Affordable and <span class="text-white d-md-none">Delivered with a smile</span></div>
+                    <div class="hero-heading text-white fs-2 d-none d-md-block">Delivered with a</div>
+                    <div class="hero-heading text-white fs-2 d-none d-md-block">Smile</div>
+                    <div class="sub-heading fs-10 text-white fw-400 letter-spacing-n02">We offer a wide selection of expert tree work and arborist services</div>
+                    <div class="row gx-3 pt-3">
+                        <div class="col-6 col-md-5">
+                            <a href="#form" class="btn btn-primary rounded-3 fw-400 text-white px-md-5 fs-12">
+                                Call Today
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <a href="#form" class="btn border-primary rounded-3 fw-400 text-primary px-md-5 fs-12">
+                                Contact us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 py-5 py-md-0">
+                    <form action="./src/form" method="POST">
+                        <div class="row form-row">
+                            <div class="col-12">
+                                <label for="">Your Full Name</label>
+                                <input type="text" placeholder="david citizen" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Your Email</label>
+                                <input type="text" placeholder="eg: name@email.com" class="form-control" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="">Your Message</label>
+                                <textarea placeholder="Your message" rows="3" class="form-control"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary text-white form-control rounded-2">Submit Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <?php include __DIR__ . '/footer.php'; ?>
