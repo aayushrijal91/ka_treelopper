@@ -1,4 +1,4 @@
-# Landing page [Boilerplate](www.aiims.com.au)
+# Landing page [KA Tree Lopping Services](https://www.kandatreelopping.com.au/)
 
 This is a landing page boilerplate that uses PHP scripting language
 
@@ -8,8 +8,8 @@ Developer: [Aayush Rijal](https://www.aayushrijal.net)
 
 Contact: 0452637371
 
-[Github]()
-[Figma]()
+[Github](https://github.com/aayushrijal91/ka_treelopper)
+[Figma](https://www.figma.com/file/khTmNSK2752NK2xElg2NEn/Untitled)
 
 ## _Instruction_
 
