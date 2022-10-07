@@ -10,6 +10,10 @@ document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     });
 });
 
+$('#see-more-services').on('click', function() {
+    $('.more-services').slideToggle();
+});
+
 $(window).on('scroll', () => {
     if ($(this).scrollTop() >= 600) {
         $('#return-to-top').fadeIn(300);

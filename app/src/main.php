@@ -72,34 +72,37 @@ include __DIR__ . '/header.php';
 </header>
 
 <section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-xl-7 col-xxl-6">
-                <div class="heading d-md-none"><span class="bg-primary">The problem solver</span> <span class="text-white">Tree Lopper</span></div>
-                <div class="fs-1 bg-primary d-none d-md-inline-flex line-height-1 pe-3">The problem solver</div>
-                <div class="fs-1 text-white d-none d-md-inline-flex line-height-1 pe-3">Tree lopper</div>
-                <div class="text-white letter-spacing-12 fs-10">We offer a wide selection of expert tree work and arborist services</div>
-                <div class="font-articulat fs-14 text-white pe-xxl-5 pt-2 pb-5 pb-md-6 pb-lg-5">Welcome to K&A Tree Lopping Services. Are you looking for a reliable and high-quality tree surgeon in the Sydney area? Then look no further. We offer a wide selection of expert tree work and arborist services to private residents, local authorities and larger companies. We have been exceeding our customer’s expectations since 2015.</div>
-                <div class="row text-white g-2">
-                    <div class="col-md h-inherit">
-                        <div class="bg-primary text-end line-height-1 p-3 h-100 d-flex flex-column justify-content-center position-relative">
-                            <?= renderImg('tree-lopper-guy.png', 'lib', 'tree-lopper-guy') ?>
-                            <div class="fs-5">Refer a Neighbour</div>
-                            <div class="cta-small-title fs-7 letter-spacing-34">Receive 10% off</div>
+    <?= renderImg('falling-leaves.gif', 'lib', 'falling-leaves') ?>
+    <div class="banner-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-xl-7 col-xxl-6">
+                    <div class="heading d-md-none"><span class="bg-primary">The problem solver</span> <span class="text-white">Tree Lopper</span></div>
+                    <div class="fs-1 bg-primary d-none d-md-inline-flex line-height-1 pe-3">The problem solver</div>
+                    <div class="fs-1 text-white d-none d-md-inline-flex line-height-1 pe-3">Tree lopper</div>
+                    <div class="text-white letter-spacing-12 fs-10">We offer a wide selection of expert tree work and arborist services</div>
+                    <div class="font-articulat fs-14 text-white pe-xxl-5 pt-2 pb-5 pb-md-6 pb-lg-5">Welcome to K&A Tree Lopping Services. Are you looking for a reliable and high-quality tree surgeon in the Sydney area? Then look no further. We offer a wide selection of expert tree work and arborist services to private residents, local authorities and larger companies. We have been exceeding our customer’s expectations since 2015.</div>
+                    <div class="row text-white g-2">
+                        <div class="col-md h-inherit">
+                            <div class="bg-primary text-end line-height-1 p-3 h-100 d-flex flex-column justify-content-center position-relative">
+                                <?= renderImg('tree-lopper-guy.png', 'lib', 'tree-lopper-guy') ?>
+                                <div class="fs-5">Refer a Neighbour</div>
+                                <div class="cta-small-title fs-7 letter-spacing-34">Receive 10% off</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col col-md-auto h-inherit">
-                        <div class="bg-primary text-center line-height-1 px-3 py-1 p-md-3 h-100 d-flex d-md-block justify-content-between align-items-center">
-                            <div class="fs-8">Refer</div>
-                            <div class="fs-4 cta-number">2</div>
-                            <div class="fs-8">15% off</div>
+                        <div class="col col-md-auto h-inherit">
+                            <div class="bg-primary text-center line-height-1 px-3 py-1 p-md-3 h-100 d-flex d-md-block justify-content-between align-items-center">
+                                <div class="fs-8">Refer</div>
+                                <div class="fs-4 cta-number">2</div>
+                                <div class="fs-8">15% off</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col col-md-auto h-inherit">
-                        <div class="bg-primary text-center line-height-1 px-3 py-1 p-md-3 h-100 d-flex d-md-block justify-content-between align-items-center">
-                            <div class="fs-8">Refer</div>
-                            <div class="fs-4 cta-number">3</div>
-                            <div class="fs-8">20% off</div>
+                        <div class="col col-md-auto h-inherit">
+                            <div class="bg-primary text-center line-height-1 px-3 py-1 p-md-3 h-100 d-flex d-md-block justify-content-between align-items-center">
+                                <div class="fs-8">Refer</div>
+                                <div class="fs-4 cta-number">3</div>
+                                <div class="fs-8">20% off</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,7 +126,7 @@ include __DIR__ . '/header.php';
                 <p class="description font-articulat fw-500 text-light-grey">With an experienced, fully qualified and friendly team, we take the time to understand your individual needs for your home or business before recommending a plan of action. For each service we provide, we create a plan which will take into consideration your location, as well as the age, the condition and the growth rate of the tree – which demonstrates perfectly how we’re more than capable of taking on any job that comes our way.</p>
                 <div class="row gx-3 pt-2">
                     <div class="col-6 col-md-5">
-                        <a href="#form" class="btn btn-grey rounded-3 fw-400 text-white px-md-5 font-helvetica-cd text-uppercase">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-grey rounded-3 fw-400 text-white px-md-5 font-helvetica-cd text-uppercase">
                             Call Today
                         </a>
                     </div>
@@ -231,6 +234,24 @@ include __DIR__ . '/header.php';
                 </div>
             </div>
         </div>
+
+        <div class="more-services">
+            <div class="row pt-4 gx-4 gy-5">
+                <div class="col-md-6 col-xl-4 h-inherit">
+                    <div class="service-card">
+                        <?= renderImg('service-1.jpg', 'lib', 'w-100') ?>
+                        <div class="caption">
+                            <div class="heading letter-spacing-n02 fs-6 line-height-1">Tree Removal</div>
+                            <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
+                                Overgrown trees are a common issue. Whether they need to be removed for extra space, they are unsightly and casting dark shadows on your garden or they’re affecting the house itself, there are a number of reasons why you may need to remove one.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-4"><a href="javascript:void(0)" id="see-more-services" class="btn btn-primary text-white fs-12">See More Services</a></div>
     </div>
 
     <div class="form" id="form">
@@ -244,7 +265,7 @@ include __DIR__ . '/header.php';
                     <div class="sub-heading fs-10 text-white fw-400 letter-spacing-n02">We offer a wide selection of expert tree work and arborist services</div>
                     <div class="row gx-3 pt-3">
                         <div class="col-6 col-md-5">
-                            <a href="#form" class="btn btn-primary rounded-3 fw-400 text-white px-md-5 fs-12">
+                            <a href="tel:<?= $phone_number ?>" class="btn btn-primary rounded-3 fw-400 text-white px-md-5 fs-12">
                                 Call Today
                             </a>
                         </div>
