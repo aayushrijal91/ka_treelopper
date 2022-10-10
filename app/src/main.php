@@ -239,11 +239,11 @@ include __DIR__ . '/header.php';
             <div class="row pt-4 gx-4 gy-5">
                 <div class="col-md-6 col-xl-4 h-inherit">
                     <div class="service-card">
-                        <?= renderImg('service-1.jpg', 'lib', 'w-100') ?>
+                        <?= renderImg('service-7.jpg', 'lib', 'w-100') ?>
                         <div class="caption">
-                            <div class="heading letter-spacing-n02 fs-6 line-height-1">Tree Removal</div>
+                            <div class="heading letter-spacing-n02 fs-6 line-height-1">Garden Cleanups</div>
                             <div class="fs-14 font-helvetica-cd fw-400 text-uppercase pt-3">
-                                Overgrown trees are a common issue. Whether they need to be removed for extra space, they are unsightly and casting dark shadows on your garden or they’re affecting the house itself, there are a number of reasons why you may need to remove one.
+                            Book our garden maintenance service and give your home green space the love and care it deserves!
                             </div>
                         </div>
                     </div>

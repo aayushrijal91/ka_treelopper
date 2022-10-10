@@ -2,9 +2,9 @@
 include __DIR__ . '/env.php';
 
 $site = "K&A Tree Lopping Services";
-$phone_number = "0432 406 340";
+$phone_number = "1300 279 524";
 $admin_email = 'arijal@aiims.com.au'; // 'ridaalameddine127@gmail.com';
-$bcc_email = "";
+// $bcc_email = "";
 $no_reply_email = 'info@kandatreelopping.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
